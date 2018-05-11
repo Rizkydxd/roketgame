@@ -31,11 +31,12 @@ public class Asteroid extends Actor
         setLocation(getX()+vx,getY());
         if(getX()<-200)toRemove=true;
     }
+    int asteroid_speed = -6;
     public void act() 
     {
-        // Add your action code here.
-        if(!toRemove)move();
-        else getWorld().removeObject(this);
-        
+        setLocation( getX() + asteroid_speed, getY());
+
+        if(getX()<=20)
+            getWorld().removeObject(this); 
     }    
 }

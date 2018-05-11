@@ -20,10 +20,11 @@ public class MyWorld extends World
         super(600, 400, 1); 
         addObject(rocket,getWidth()/6,getHeight()/2);
     }
+    //action untuk ngeluarkan asteroid secara acak
     public void act()
     {
         if(jeda>0)jeda--;
-        else jeda=20;
+        else jeda=10;
         if(jeda==1)
         {
             int py=Greenfoot.getRandomNumber(getHeight());
