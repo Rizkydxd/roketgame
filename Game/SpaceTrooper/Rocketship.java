@@ -14,10 +14,24 @@ public class Rocketship extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        //kode aksi
+        //aksi gerak
         checkKeyPress();
+        //check hit roketnya
+        if(checkHit())
+        {
+            getWorld().removeObject(this);
+            Greenfoot.setWorld(new End());
+        }
     }    
-    
+    private boolean checkHit()
+    {
+        if(isTouching(Asteroid.class))
+        {
+            return true;
+        }
+        return false;
+    }
     private void checkKeyPress()
     {
         if (Greenfoot.isKeyDown("up")) 
