@@ -1,19 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class End here.
+ * Write a description of class WorldInfo here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class End extends World
+public class WorldInfo extends World
 {
 
     /**
-     * Constructor for objects of class End.
+     * Constructor for objects of class WorldInfo.
      * 
      */
-    public End()
+    public WorldInfo()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
@@ -21,7 +21,7 @@ public class End extends World
     }
     private void siapSiap()
     {
-        Retry retry = new Retry();
-        addObject(retry,300,300);
+        Start start = new Start();
+        addObject(start,300,350);
     }
 }

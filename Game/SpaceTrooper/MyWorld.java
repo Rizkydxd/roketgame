@@ -20,12 +20,15 @@ public class MyWorld extends World
         super(600, 400, 1); 
         siapSiap();
         prepare();
-    }
+    }
+
 
     private void siapSiap()
     {
         Start start = new Start();
         addObject(start,300,100);
+        Info info = new Info();
+        addObject(info,300,250);
     }
 
     /**
