@@ -21,9 +21,9 @@ public class WorldInfo extends World
     }
     private void siapSiap()
     {
-        Start start = new Start();
-        addObject(start,300,350);
+        Rocket roket = new Rocket();
+        addObject(roket,300,350);
         IsiInfo info = new IsiInfo();
-        addObject(info,300,200);
+        addObject(info,300,150);
     }
 }
