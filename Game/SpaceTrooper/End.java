@@ -21,6 +21,8 @@ public class End extends World
     }
     private void siapSiap()
     {
+        GameOver over = new GameOver();
+        addObject(over,300,150);
         Retry retry = new Retry();
         addObject(retry,300,300);
     }

@@ -24,6 +24,6 @@ public class WorldInfo extends World
         Start start = new Start();
         addObject(start,300,350);
         IsiInfo info = new IsiInfo();
-        addObject(info,300,200);
+        addObject(info,300,150);
     }
 }
