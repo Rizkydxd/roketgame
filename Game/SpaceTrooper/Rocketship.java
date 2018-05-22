@@ -12,10 +12,12 @@ public class Rocketship extends Actor
      * Act - do whatever the Rocketship wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    int score=0;
     public void act() 
     {
         //kode aksi
         //aksi gerak
+        score();
         checkKeyPress();
         //check hit roketnya
         if(checkHit())
@@ -31,6 +33,13 @@ public class Rocketship extends Actor
             return true;
         }
         return false;
+    }
+    private void score()
+    {
+        
+            score++;
+            getWorld().showText("score = " +score,500,20);
+        
     }
     private void checkKeyPress()
     {
