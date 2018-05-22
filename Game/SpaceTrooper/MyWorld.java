@@ -29,6 +29,8 @@ public class MyWorld extends World
         addObject(start,300,100);
         Info info = new Info();
         addObject(info,300,250);
+        Rocket roket = new Rocket();
+        addObject(roket,150,150);
     }
 
     /**
